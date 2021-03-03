@@ -50,8 +50,10 @@
         navigator.serviceWorker.register("service-worker.js")
           .then(reg => {
             console.log("We found your service worker file!", reg);
-          });
-      });
+          }).catch(error => {
+            console.log("Uh oh, we have a problem...", error);
+          });      
+        });
     }
   </script>
 </body>
