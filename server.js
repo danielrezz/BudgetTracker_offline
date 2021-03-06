@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-  process.env.PORT || "mongodb://localhost/budget", 
+  process.env.PORT || 3000 || "mongodb://localhost/budget", 
   {
   useNewUrlParser: true,
   useUnifiedTopology: true,
